@@ -1,0 +1,2 @@
+# MyClass
+My Automation class
