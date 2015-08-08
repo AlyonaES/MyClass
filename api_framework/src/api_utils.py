@@ -143,6 +143,6 @@ class Calls:
             r.json = json_resp
             response = Response()
             response.http_code = r.status_code
-            response.json = r.json
+            response.body = r.json
             response.headers = r.headers
             return response
