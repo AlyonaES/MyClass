@@ -123,8 +123,6 @@ class Calls:
             headers['Content-Type'] = 'application/json'
             headers['Accept'] = accept
 
-
-
             # Python sdelaet request s zadannimi parametrami i zapishet resultat, poluchenniy s servere v object r
             r = requests.request(
                 url = url,
