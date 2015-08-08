@@ -41,7 +41,7 @@ class TestClass(TestCase):
         folder_name = self.calls.get_random_name()
         resp = self.calls.delete_folder(folder_name)
         assert resp.http_code == httplib.NOT_FOUND
-        print(resp.body[errorMessage] == 'Item does not exist')
+        print(resp.body['errorMessage'] == 'Item does not exist')
 
     def test_delete_folder_wrong_accept_header(self):
         folder_name = self.calls.get_random_name()
